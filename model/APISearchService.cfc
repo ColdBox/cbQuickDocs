@@ -103,6 +103,9 @@
 			</cfoutput>
 			<cfset cache.set(cacheKey,arrayAPIs) />
 		</cfif>
+		
+		<cfset arraySort(arrayAPIs,"textnocase")>
+		
 		<cfreturn arrayAPIs />
 	</cffunction>
 
