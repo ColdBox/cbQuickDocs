@@ -59,7 +59,7 @@ component {
 
 		// module settings - stored in modules.name.settings
 		settings = {
-			defaultAPI = "ColdBoxDocs-3.1.0"
+			defaultAPI = "ColdBoxDocs-3.5.0"
 		};
 
 		// Layout Settings
@@ -73,15 +73,15 @@ component {
 		];
 
 	}
-	
+
 	/**
 	* Event Caching mixin of api selection for event caching uniqueness
-	*/ 
+	*/
 	function onRequestCapture(event,interceptData){
 		var rc = event.getCollection();
 		rc._selectedAPI = controller.getPlugin("CookieStorage").getVar("api", settings.defaultAPI);
 	}
-	
+
 
 	/**
 	* Fired when the module is registered and activated.
