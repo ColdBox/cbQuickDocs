@@ -3,7 +3,7 @@
 */
 component{
 
-	property name="APISearchService" inject;
+	property name="APISearchService" inject="id:APISearchService";
 	property name="CookieStorage" inject="coldbox:plugin:CookieStorage";
 
 	function preHandler(event){

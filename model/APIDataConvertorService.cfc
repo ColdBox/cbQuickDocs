@@ -19,7 +19,6 @@
 
 	<cffunction name="convert" access="public" output="false" hint="I take a give API URL and gather all the data for cbQuickDocs to use and persist the data to disk">
 		<cfargument name="apiURL" type="string" required="true" hint="The URL to the API to convert data for">
-		<cfsetting requesttimeout="999999" >
 		<!--- Call to the allclasses-frame to get a list of classes and links to them to build our data off of --->
 		<cfset var apiAllClassesURL = arguments.apiURL & "/allclasses-frame.html" />
 		<cfhttp url="#apiAllClassesURL#" method="get" resolveurl="true" />
