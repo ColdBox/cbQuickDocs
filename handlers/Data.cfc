@@ -10,6 +10,7 @@ component{
 	function index(event,rc,prc){
 		prc.xehConvertAPI = "cbquickdocs.data.convertAPI";
 		prc.APIs = APISearchService.getAvailableAPIs();
+		event.setView("data/index");
 	}
 
 	function convertAPI(event,rc,prc){
