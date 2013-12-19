@@ -59,7 +59,7 @@ component {
 
 		// module settings - stored in modules.name.settings
 		settings = {
-			defaultAPI = "ColdBoxDocs-3.7.0"
+			defaultAPI = "ColdBoxDocs-3.8.0"
 		};
 
 		// Layout Settings
